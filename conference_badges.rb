@@ -20,10 +20,8 @@ end
 #outputs-->list of room assignments, "Hello, attendee! You'll be assigned to room ___!"-->string inside an array
 
 def assign_rooms(attendees)
-  room = 0 
-  attendees.collect do |name|
-    room += 1 
-    "Hello, #{name}! You'll be assigned to room #{room}!"
+  attendees.each_with_index.collect do |attendee, index|
+    "Hello, #{attendee}! You'll be assigned to room #{index+1}!"
   end
 end
 
