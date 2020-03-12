@@ -1,4 +1,3 @@
-require "pry"
 def badge_maker (attedees)
   "Hello, my name is #{attedees}."
 end
@@ -20,9 +19,9 @@ def assign_rooms (attedees)
 end
 
 def printer (attedees)
-  attedees.each_with_index
-  puts batch_badge_creator(attedees).each do |attedees|
-  puts assign_rooms(attedees).each do |attedees|
-end
-  printer
-end
+  print = [ ]
+   batch_badge_creator(attedees).each{|batch|puts batch}
+  assign_rooms(attedees).each{|assign_rooms|puts rooms}
+end 
+ end
+
