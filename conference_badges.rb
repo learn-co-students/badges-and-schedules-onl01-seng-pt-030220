@@ -21,7 +21,7 @@ end
 def printer (attedees)
   print = [ ]
    batch_badge_creator(attedees).each{|batch|puts batch}
-  assign_rooms(attedees).each{|assign_rooms|puts rooms}
+  assign_rooms(attedees).each{|assign_rooms|puts assign_rooms}
 end 
- end
+
 
