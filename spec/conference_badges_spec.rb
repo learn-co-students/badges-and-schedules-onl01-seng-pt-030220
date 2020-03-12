@@ -1,3 +1,4 @@
+
 require 'spec_helper'
 
 describe 'conference_badges' do
@@ -108,3 +109,6 @@ TEXT
   end
 
 end
+
+
+
