@@ -6,7 +6,9 @@ end
 
 def batch_badge_creator(speakers)
   badges = []
-  speakers.each{|speaker| badges << badge_maker(speaker)}
+  speakers.each do |speaker|
+    badges << badge_maker(speaker) 
+  end
   badges
 end
 
@@ -22,8 +24,8 @@ def printer(speakers)
   batch_badge_creator(speakers).each do |badge|
     puts badge
   end
-   assign_rooms(speakers).each do |badge|
-    puts badge
+   assign_rooms(speakers).each do |room|
+    puts room
   end
 end
 
