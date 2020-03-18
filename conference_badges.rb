@@ -29,6 +29,10 @@ end
 # end
 #############################################
 def printer(argument)
-  puts batch_badge_creator(argument)
-  puts assign_rooms(argument)
+  # puts "v"
+
+ batch_badge_creator(argument).each {|each_element| puts each_element}
+
+ # puts "was hea"
+
 end
