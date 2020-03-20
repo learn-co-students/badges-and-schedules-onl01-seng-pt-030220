@@ -29,6 +29,13 @@ end
 # end
 #############################################
 def printer(argument)
+
   batch_badge_creator(argument).each {|iteration| puts iteration}
   assign_rooms(argument).each {|iteration| puts iteration}
+
+  returned_assigned_rooms = assign_rooms(argument).to_s
+  returned_batches_badged = batch_badge_creator(argument).to_s
+
+  returned_batches_badged
+
 end
